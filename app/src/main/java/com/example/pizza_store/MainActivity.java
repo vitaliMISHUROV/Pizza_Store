@@ -49,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private final TextWatcher textWatcher = new TextWatcher() {
+
+    private  TextWatcher textWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
         }

@@ -6,84 +6,155 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/l" />
+    <RadioGroup
+        android:id="@+id/groupRadiogroup"
+        android:layout_width="184dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toTopOf="@+id/evMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdChecbox">
+
+        <RadioButton
+            android:id="@+id/firstRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:text="маленька" />
+
+        <RadioButton
+            android:id="@+id/secondRadiobatton"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:text="середня" />
+
+        <RadioButton
+            android:id="@+id/thirthRadiobatton"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:text="велика" />
+    </RadioGroup>
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/sbtn"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/secondChecbox"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/m" />
 
     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toEndOf="@+id/firstChecbox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l" />
+
+    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/rbnew"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/thirdChecbox"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/s" />
 
     <CheckBox
-        android:id="@+id/fbtn"
+        android:id="@+id/firstChecbox"
         android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
         android:text="4 Сира"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.572"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/sbtn"
+        android:id="@+id/thirdChecbox"
         android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
-        android:text="4 Мяса"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.595"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <CheckBox
-        android:id="@+id/tbtn"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
         android:text="Маргарита "
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/secondChecbox" />
+
+    <CheckBox
+        android:id="@+id/secondChecbox"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="4 Мяса"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstChecbox" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnNextResultActivity"
         android:layout_width="190dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="4dp"
         android:text="Далі"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/evMenu"
+        android:layout_width="135dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="128dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rbnew"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rbnew"
+        android:layout_width="144dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/evMenu"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/groupRadiogroup"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.391">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add paper" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add onion" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add cherry" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

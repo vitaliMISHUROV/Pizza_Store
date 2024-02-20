@@ -8,6 +8,7 @@ public class Order implements Serializable {
 
     private  String  name;
     private  String  size;
+    private  String dishes;
     private  int   numbers;
 
     private List<String> ingredients = new ArrayList<>();
@@ -15,11 +16,20 @@ public class Order implements Serializable {
     public Order() {
     }
 
-    public Order(String name, String size, int numbers, List<String> ingredients) {
+    public Order(String name, String size, String dishes, int numbers, List<String> ingredients) {
         this.name = name;
         this.size = size;
+        this.dishes = dishes;
         this.numbers = numbers;
         this.ingredients = ingredients;
+    }
+
+    public String getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(String dishes) {
+        this.dishes = dishes;
     }
 
     public String getName() {
@@ -59,6 +69,7 @@ public class Order implements Serializable {
         return "Order{" +
                 "name='" + name + '\'' +
                 ", size='" + size + '\'' +
+                ", dishes='" + dishes + '\'' +
                 ", numbers=" + numbers +
                 ", ingredients=" + ingredients +
                 '}';
